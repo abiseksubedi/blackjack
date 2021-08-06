@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        background-image: url(/grass-84622_1920.jpg);
+        text-align: center;
+        font-family: 'Trebuchet MS';
+    }
+
+    .card-container {
+
+        background-color: rgba(0, 140, 255, 0.637);
+        width: 70%;
+        margin: auto;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        padding-top: 4em;
+    }
+
+    h1 {
+        color: goldenrod;
+        text-shadow: 1px 0 5px red;
+        box-shadow: 2px 2px 4px black;
+        background-color: rgba(0, 140, 255, 0.637);
+        width: fit-content;
+        position: relative;
+        margin: 5px auto;
+    }
+
+    h3,
+    h4 {
+        text-shadow: 1px 0 5px white;
+        color: whitesmoke
+    }
+    h3{
+        background-color: black;
+        width: fit-content;
+        margin:auto;
+    }
+
+    .card-container button {
+        background-color: goldenrod;
+        margin: 2px;
+        color:green;
+    }
+
+    button:hover {
+        background-color: orangered;
+    }
+
+    #display-El {
+        font-style: italic;
+    }
+
+    .newCard {
+        visibility: hidden;
+    }
+    span{
+        color: black;
+    }
+    p{
+        color:white;
+        font-weight: 600;
+    }
+ 
+</style>
+
+<body>
+    <header>
+        <h1> The BlackJack </h1>
+    </header>
+    <div class="card-container">
+       <div> <h3 id="display-El">Start the game !</h3>
+
+        <h4> Card <span id="cardsel">:</span></h4>
+        <h4> Sum <span id="sum-el">:</span></h4>
+        <button id="startGame" onclick="startGame()"> Start Game</button><br>
+        <button class="newCard" id="newCard" onclick="newCard()">New Card</button>
+        </div>
+        <p> Abisek : $44</p>
+        
+    </div>
+
+   
+
+    <script src="blackjack.js">
+
+       
+
+    </script>
+</body>
+
+</html>
